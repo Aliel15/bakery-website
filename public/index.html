@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bakery Order</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <h1>Welcome to Our Bakery</h1>
+  <nav>
+    <a href="/">Home</a>
+    <br>
+    <a href="/about">About</a>
+    <br>
+    <a href="/contact">Contact</a>
+    <br>
+  </nav>
+
+  <h2>Place Your Order</h2>
+  <form action="/order" method="POST">
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Item:</label><br>
+    <input type="text" name="item" required><br><br>
+
+    <label>Quantity:</label><br>
+    <input type="number" name="quantity" required><br><br>
+
+    <button type="submit">Submit Order</button>
+  </form>
+</body>
+</html>
