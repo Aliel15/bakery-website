@@ -34,3 +34,51 @@ A full-stack **Bakery Website** built with **Node.js**, **Express.js**, and **My
 ```bash
 git clone https://github.com/aliel15/bakery-site.git
 cd bakery-site
+
+📦 2. Install Dependencies
+bash
+Copy
+Edit
+npm install
+
+🗝️ 3. Create .env File
+Create a .env file in the root folder with your MySQL credentials:
+
+env
+Copy
+Edit
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=your_password
+DB_NAME=bakerydb
+
+🧱 4. Create MySQL Database & Tables
+Run the following SQL commands in your MySQL server:
+
+sql
+Copy
+Edit
+CREATE DATABASE bakerydb;
+USE bakerydb;
+
+CREATE TABLE contact_messages (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100),
+  message TEXT
+);
+
+CREATE TABLE orders (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  item VARCHAR(100),
+  quantity INT
+);
+
+▶️ 5. Start the Server
+bash
+Copy
+Edit
+node server.js
+🌐 6. Open in Browser
+Visit: http://localhost:5000
